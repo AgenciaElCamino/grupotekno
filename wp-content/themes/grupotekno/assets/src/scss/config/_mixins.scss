@@ -1,0 +1,17 @@
+@mixin get_background_image($file_name, $position: 0 0, $repeat: no-repeat) { 
+    $image_path: "../img/";
+    background: {
+        image: url($image_path + $file_name); 
+        position: $position;
+        repeat: $repeat;
+    }
+}
+
+@mixin center_hv() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}

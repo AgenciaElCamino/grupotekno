@@ -1,0 +1,50 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: $red;
+    font-family: 'Ubuntu', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+section {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+}
+.container {
+    width: $default-container-width;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main-content {
+    position: relative;
+    color: $white;
+    &.home {
+        .content {
+            width: 35%;
+            bottom: 10%;
+            left: 20%;
+            position: absolute;
+            p {
+                margin: 0 0 10px 0;
+                font-size: 15px;
+            }
+        }
+
+    }
+    &.timeline {
+        z-index: 0;
+        .timeline-image-holder {
+            position: absolute;
+            top: 70% !important;
+            width: 60%;
+            @include center_hv();
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

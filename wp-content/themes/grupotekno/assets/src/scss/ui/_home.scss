@@ -1,0 +1,13 @@
+.main-content {
+    &.home {
+        background: url(../img/banner-home.jpg) no-repeat top;
+    }
+    &.timeline {
+        background: url(../img/bg-linha-tempo.jpg) no-repeat top;
+    }
+    background-size: 100% !important;
+    @media #{$desktop-full-hd} {
+        background-size: 109%;
+        background-position: 0 120px;
+    }
+}
