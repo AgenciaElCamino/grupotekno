@@ -1,5 +1,5 @@
 <?php
-
+add_theme_support('post-thumbnails');
 show_admin_bar(false);
 add_theme_support('menus');
 
@@ -40,4 +40,20 @@ function gt_get_page_content($page_title)
     $id = $page->ID;
     $page_object = get_page($id);
     return wpautop($page_object->post_content);
+}
+
+function gt_get_custom_post_type($post_type)
+{
+    $posts = new WP_Query(array('post_type' => $post_type));
+    while ($posts->have_posts()) : $posts->the_post(); ?>
+        <div class="slide">
+                <?= the_post_thumbnail() ?>
+            <div class="info">
+                <?= the_title() ?>
+                <?= the_content() ?>
+                <?= get_field('site') ?>
+                <?= get_field('telefone') ?>
+            </div>
+        </div>
+    <?php endwhile;
 }
