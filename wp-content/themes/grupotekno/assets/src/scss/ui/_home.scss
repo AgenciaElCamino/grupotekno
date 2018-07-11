@@ -5,7 +5,91 @@
     &.timeline {
         background: url(../img/bg-linha-tempo.jpg) no-repeat top;
     }
-    background-size: 100% !important;
+    &.empresas {
+        background: url(../img/bg-empresas.jpg) no-repeat top;
+        .texto-empresas {
+            width: 980px;
+            margin: 0 auto;
+            padding: 15px 0 0 0;
+        }
+        .slides {
+            .slide {
+                .attachment-post-thumbnail {
+                    width: auto;
+                    max-width: 220px;
+                    height: auto;
+                }
+                .info {
+                    float: right;
+                    width: 45%;
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+    &.contato {
+        .texto-contato {
+            background: #636466;
+            padding: 30px 0;
+            text-align: center;
+            .container {
+                display: inline-block;
+                width: auto;
+                p {
+                    text-align: left;
+                }
+            }
+        }
+        .direita,
+        .esquerda {
+            color: #636466;
+        }
+        
+        .departamentos {
+            margin-top: 30px;
+            a {
+                color:  #636466;
+                text-decoration: none;
+            }
+            .container {
+                width: 660px;
+            }
+        }
+    }
+    &.trabalhe {
+        background: url(../img/bg-trabalhe.jpg) no-repeat center;
+        .container {
+            .conteudo-trabalhe {
+                width: 667px;
+                margin: 0 auto;
+                color:  #636466;
+                padding: 20px 0 0 0;
+                .form-wrapper {
+                    input[type=text],
+                    input[type=file],
+                    textarea {
+                        padding: 5px;
+                        margin: 0 0 10px 0;
+                        float: left;
+                        width: 100%;
+                    }
+                    textarea {
+                        height: 60px;
+                    }
+                    input[type=submit] {
+                        border:0;
+                        color: $white;
+                        padding: 5px 10px;
+                        background: #eb212e;
+                        font-family: 'Ubuntu', sans-serif;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    background-size: 100% 100% !important;
     @media #{$desktop-full-hd} {
         background-size: 109%;
         background-position: 0 120px;
