@@ -20,7 +20,9 @@ module.exports = function (grunt) {
                 files: {
                     'assets/dist/js/scripts.min.js': [
                         'assets/src/js/jquery.js',
-                        'assets/src/js/timeline.js'
+                        'assets/src/js/cycle.js',
+                        'assets/src/js/timeline.js',
+                        'assets/src/js/slider-empresas.js'
                     ]
                 }
             }

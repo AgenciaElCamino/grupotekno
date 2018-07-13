@@ -21,8 +21,19 @@
         <div class="texto-empresas">
             <?= gt_get_page_content('Empresas do Grupo') ?>
         </div>
-        <div class="slides">
+        <div id="slides" class="slides">
             <?= gt_get_custom_post_type('slider_empresas') ?>
+        </div>
+    </div>
+</section>
+
+<section class="main-content relacao">
+    <div class="texto">
+        <div class="container">
+            <?= gt_get_page_content('Investidores') ?>
+        </div>
+        <div class="docs">
+            
         </div>
     </div>
 </section>
@@ -45,6 +56,7 @@
             </div>            
         </div>
     </div>
+    
 </section>
 
 <section class="main-content trabalhe">

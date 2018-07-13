@@ -46,14 +46,16 @@ function gt_get_custom_post_type($post_type)
 {
     $posts = new WP_Query(array('post_type' => $post_type));
     while ($posts->have_posts()) : $posts->the_post(); ?>
-        <div class="slide">
+        <div class="slide" data-pager="<?= the_title()?>">
                 <?= the_post_thumbnail() ?>
             <div class="info">
-                <?= the_title() ?>
                 <?= the_content() ?>
-                <?= get_field('site') ?>
-                <?= get_field('telefone') ?>
             </div>
         </div>
     <?php endwhile;
+}
+
+function gt_get_relacao_dropdown()
+{
+    
 }

@@ -12,17 +12,31 @@
             margin: 0 auto;
             padding: 15px 0 0 0;
         }
+        #nav {
+            text-align: right;
+            margin: 0 80px 0 0;
+            a {
+                color: $white;
+                margin: 0 0 0 30px;
+                &.activeSlide {
+                    text-decoration: underline;
+                }
+            }
+        }
         .slides {
             .slide {
+                background-color: transparent !important;
                 .attachment-post-thumbnail {
                     width: auto;
-                    max-width: 220px;
                     height: auto;
+                    @media #{$desktop-hd} {
+                        max-width: 400px;
+                    }
                 }
                 .info {
                     float: right;
                     width: 45%;
-                    margin-top: 70px;
+                    margin-top: 40px;
                 }
             }
         }
@@ -44,7 +58,7 @@
         .esquerda {
             color: #636466;
         }
-        
+
         .departamentos {
             margin-top: 30px;
             a {
@@ -87,6 +101,14 @@
                     }
                 }
             }
+        }
+    }
+    &.relacao { 
+        background: url(../img/bg-relacao.jpg) no-repeat top;
+        background-color: #7A1014;
+        background-size: 100% !important;
+        h2 {
+            margin: 0 0 30px 0;
         }
     }
     background-size: 100% 100% !important;
