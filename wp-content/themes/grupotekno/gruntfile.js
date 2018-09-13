@@ -22,19 +22,21 @@ module.exports = function (grunt) {
                         'assets/src/js/jquery.js',
                         'assets/src/js/cycle.js',
                         'assets/src/js/timeline.js',
-                        'assets/src/js/slider-empresas.js'
+                        'assets/src/js/slider-empresas.js',
+                        'assets/src/js/scripts.js',
                     ]
                 }
             }
         },
 
         watch: {
+            options: {
+                spawn: false,
+                interval: 3000
+            },
             styles: {
                 files: ['**/*.scss'],
                 tasks: ['sass'],
-                options: {
-                    spawn: false
-                }
             },
             scripts: {
                 files: ['**/*.js'],
