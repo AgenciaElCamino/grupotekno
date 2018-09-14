@@ -25,7 +25,7 @@ function gt_get_left_menu()
 function gt_get_right_menu()
 {
     wp_nav_menu([
-        'menu' => 'RIGHT SITE NAV'
+        'menu' => 'RIGHT SITE MENU'
     ]);
 }
 

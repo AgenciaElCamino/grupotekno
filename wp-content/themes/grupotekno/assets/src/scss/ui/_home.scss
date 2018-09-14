@@ -1,105 +1,140 @@
 .main-content {
-    background-size: 100% 100% !important;
-    min-height: 660px;
-    &.home {
-        background: url(../img/banner-home.jpg) no-repeat top;
-    }
-    &.timeline {
-        background-size: 100% !important;
-        min-height: 250vh;
-        background: url(../img/bg-linha-tempo.jpg) no-repeat top;
-        .container {
-            .linha {
-                position: relative;
-                top: 350px;
-                background: url(../img/bg-linha.jpg) center repeat-y;
-                min-height: 230vh;
-                margin: 0 auto;
-                width: 447px;
-                .event {
-                    color: #77787b;
-                    font-size: 13px;
-                    width: 230px;
-                    height: 150px;
-                    background-size: 100% !important;
-                    &.left {
-                        background: url(../img/esquerda.png) no-repeat;
-                        p {
-                            margin-left: 10px;
-                            padding-right: 95px;
-                        }
-                        .ano {
+    background-size: 100% 100% !important; 
+}
 
-                        }
-                    }
-                    &.right {
-                        background: url(../img/direita.png) no-repeat;
-                        p {
-                            margin-right: 10px;
-                            padding-left: 95px;
-                        }
-                        .ano {
-                            
-                        }
-                    }
-                }
+.home {
+    background: url(../img/banner-home.jpg) no-repeat top;
+    min-height: 100vh;
+    .content {
+        position: absolute;
+        width: 35%;
+        left: 200px;
+        bottom: 50px;
+        p {
+            color: #ffffff;
+            margin: 0 0 10px 0;
+            font-size: 15px;
+        }
+    }
+}
+
+.timeline {
+    background: url(../img/bg-linha-tempo.jpg) no-repeat top;
+    min-height: 100vh;
+}
+
+.empresas {
+    background: url(../img/bg-empresas.jpg) no-repeat top;
+    min-height: 100vh;
+    .texto-empresas {
+        margin: 0 auto;
+        padding: 15px 0 0 0;
+        color: #ffffff;
+    }
+    #nav {
+        text-align: right;
+        margin: 0 80px 0 0;
+        a {
+            color: $white;
+            margin: 0 0 0 30px;
+            &.activeSlide {
+                text-decoration: underline;
             }
         }
     }
-    &.empresas {
-        background: url(../img/bg-empresas.jpg) no-repeat top;
-        .texto-empresas {
-            width: 980px;
-            margin: 0 auto;
-            padding: 15px 0 0 0;
-        }
-        #nav {
-            text-align: right;
-            margin: 0 80px 0 0;
-            a {
-                color: $white;
-                margin: 0 0 0 30px;
-                &.activeSlide {
-                    text-decoration: underline;
-                }
-            }
-        }
-        .slides {
-            .slide {
-                background-color: transparent !important;
-                .attachment-post-thumbnail {
-                    width: auto;
-                    height: auto;
-                    @media #{$desktop-hd} {
-                        max-width: 400px;
-                    }
-                }
-                .info {
-                    float: right;
-                    width: 45%;
-                    margin-top: 40px;
-                }
-            }
-        }
-    }
-    &.contato {
-        .texto-contato {
-            background: #636466;
-            padding: 30px 0;
-            text-align: center;
-            .container {
-                display: inline-block;
+    .slides {
+        height: 380px;
+        .slide {
+            background-color: transparent !important;
+            .attachment-post-thumbnail {
                 width: auto;
+                height: auto;
+                @media #{$desktop-hd} {
+                    max-width: 400px;
+                }
+            }
+            .info {
+                color: #ffffff;
+                float: right;
+                width: 45%;
+                margin-top: 90px;
+            }
+        }
+    }
+}
+
+.main-content {
+    &.inv {
+        background: #636466;
+        min-height: 100vh;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.relacao { 
+    min-height: 500px;
+    width: $default-container-width;
+    background: url(../img/bg-relacao.jpg) no-repeat top;
+    background-size: 100% !important;
+    padding: 100px 0 100px 0;
+    background-color: #7C0F14;
+    .info {
+        margin-bottom: 40px;
+        color: #fff;
+        width: 80%;
+        margin: 0 auto 40px auto;
+        h2 {
+            margin: 0 0 30px 0;
+            text-align: center
+        }
+    }
+    .dropdown {
+        cursor: pointer;
+        background-color: rgba(0,0,0,.4);
+        padding-top: 7px; 
+        padding-bottom: 7px;
+        margin-bottom: 15px; 
+        .dropdown-menu {
+            display: none;
+            &._open {
+                display: block
+            }
+        }
+    }
+}
+
+.contato {
+    min-height: 100vh;
+    background: #636466;
+    color: #FFFFFF;
+    .container {
+        width: 940px;
+        padding: 5vh 0 0 0;
+        .page-content {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .texto-contato {
+            background: #ffffff;
+            text-align: center;
+            height: 95vh;
+            margin-top: 60px;
+            .contatos {
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 100px;
+                .left,
+                .right {
+                    color: #636466;
+                }
                 p {
                     text-align: left;
+                    margin: 0 0 20px 0
                 }
             }
         }
-        .direita,
-        .esquerda {
-            color: #636466;
-        }
-
+    
         .departamentos {
             margin-top: 30px;
             a {
@@ -111,85 +146,101 @@
             }
         }
     }
-    &.trabalhe {
-        background: url(../img/bg-trabalhe.jpg) no-repeat center;
-        .container {
-            .conteudo-trabalhe {
-                width: 667px;
-                margin: 0 auto;
-                color:  #636466;
-                padding: 20px 0 0 0;
-                .form-wrapper {
-                    input[type=text],
-                    input[type=file],
-                    textarea {
-                        padding: 5px;
-                        margin: 0 0 10px 0;
-                        float: left;
-                        width: 100%;
-                    }
-                    textarea {
-                        height: 60px;
-                    }
-                    input[type=submit] {
-                        border:0;
-                        color: $white;
-                        padding: 5px 10px;
-                        background: #eb212e;
-                        font-family: 'Ubuntu', sans-serif;
-                        font-size: 14px;
-                        cursor: pointer;
-                    }
-                }
+}
+
+.relacao { 
+    background: url(../img/bg-relacao.jpg) no-repeat top;
+    background-color: #7A1014;
+    background-size: 100% !important;
+    padding-top: 100px;
+    .dropdown {
+        max-width: 80%;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #fff;
+        background-color: rgba(0,0,0,.4);
+        padding-top: 7px; 
+        padding-bottom: 7px;
+        margin-bottom: 15px; 
+        .dropdown-menu {
+            display: none;
+            &._open {
+                display: block
             }
         }
+        a {
+            color :#fff;
+            text-decoration: none;
+        }
     }
-    &.relacao { 
-        background: url(../img/bg-relacao.jpg) no-repeat top;
-        background-color: #7A1014;
+    h2 {
+        margin: 0 0 30px 0;
+        text-align: center
+    }
+    .texto,
+    .docs {
+        max-width: 980px;
+        margin: 0 auto;
+        /*
+        ul {
+            list-style: none;
+            li:before {
+                position: absolute;
+                content: '+';
+                margin-left: -30px;
+            }
+        }
+        */
+    }
+    .docs {
+        width: 780px;
+        ul{
+            margin: 0;
+        }   
+    } 
+}
+
+.trabalhe {
+    min-height: 100vh;
+    background: #eb212e;
+    .container {
         background-size: 100% 100% !important;
-        padding-top: 50px;
-        h2 {
-            margin: 0 0 30px 0;
-            text-align: center
-        }
-        .texto,
-        .docs {
-            max-width: 980px;
+        background: url(../img/trabalhe.png) no-repeat center;
+        background-color: #fff;
+        height: 100vh;
+        .conteudo-trabalhe {
+            width: 667px;
             margin: 0 auto;
-            .dropdown {
-                cursor: pointer;
-                background-color: rgba(0,0,0,.4);
-                padding-top: 7px; 
-                padding-bottom: 7px;
-                margin-bottom: 15px; 
-                .dropdown-menu {
-                    display: none;
-                    &._open {
-                        display: block
-                    }
+            color:  #636466;
+            padding: 20px 0 0 0;
+            p {
+                margin: 0 0 10px 0;
+            }
+            .form-wrapper {
+                input[type=text],
+                input[type=file],
+                textarea {
+                    padding: 5px;
+                    margin: 0 0 10px 0;
+                    float: left;
+                    width: 100%;
+                }
+                textarea {
+                    height: 60px;
+                }
+                input[type=submit] {
+                    border:0;
+                    color: $white;
+                    padding: 5px 10px;
+                    background: #eb212e;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                label {
+                    font-size: 14px
                 }
             }
-            /*
-            ul {
-                list-style: none;
-                li:before {
-                    position: absolute;
-                    content: '+';
-                    margin-left: -30px;
-                }
-            }
-            */
         }
-        .docs {
-            width: 780px;
-            ul{
-                margin: 0;
-            }   
-        }
-    }
-    @media #{$desktop-full-hd} {
-        background-size: 109%;
-        background-position: 0 120px;
     }
 }

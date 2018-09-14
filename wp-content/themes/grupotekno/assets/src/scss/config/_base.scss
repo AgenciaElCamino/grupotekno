@@ -20,31 +20,19 @@ section {
     margin: 0 auto;
 }
 
-.main-content {
-    position: relative;
-    color: $white;
-    &.home {
-        .content {
-            float: left;
-            width: 35%;
-            margin:185px 0 0 200px;
-            p {
-                margin: 0 0 10px 0;
-                font-size: 15px;
-            }
-        }
-
-    }
-    &.timeline {
-        z-index: 0;
-        .timeline-image-holder {
-            position: absolute;
-            top: 70% !important;
-            width: 60%;
-            @include center_hv();
-            img {
-                width: 100%;
-            }
-        }
-    }
+p {
+    margin: 0;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Ubuntu', sans-serif;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-family: 'Ubuntu', sans-serif;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-family: 'Ubuntu', sans-serif;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-family: 'Ubuntu', sans-serif;
+  }

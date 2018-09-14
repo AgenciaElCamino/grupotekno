@@ -8,64 +8,15 @@
     </div>
 </div>
 
-<section class="main-content timeline">
+<div class="main-content timeline">
     <div class="container">
-        <!--
-        <div class="timeline-image-holder" data-src="<?= get_template_directory_uri() ?>/assets/dist/img/timeline.png" data-src-open="<?= get_template_directory_uri() ?>/assets/dist/img/timeline-open.png">
-            <?= gt_get_image('timeline.png') ?>
-        </div>
-        -->
-        <div class="linha">
-            <div class="event left text">
-                <p>
-                    Lorem ipsum.
-                </p>
-            </div>
-            <div class="event right image">
-                <p>
-                    teste
-                </p>
-            </div>
-            <div class="event left text">
-                <p>
-                    Lorem ipsum.
-                </p>
-            </div>
-            <div class="event right image">
-                <p>
-                    teste
-                </p>
-            </div>
-            <div class="event left text">
-                <p>
-                    Lorem ipsum.
-                </p>
-            </div>
-            <div class="event right image">
-                <p>
-                    teste
-                </p>
-            </div>
-            <div class="event left text">
-                <p>
-                    Lorem ipsum.
-                </p>
-            </div>
-            <div class="event right image">
-                <p>
-                    teste
-                </p>
-            </div>
-            <div class="event left text">
-                <p>
-                    Lorem ipsum.
-                </p>
-            </div>
+        <div class="content">
+            a
         </div>
     </div>
-</section>
+</div>
 
-<section class="main-content empresas">
+<div class="main-content empresas">
     <div class="container">
         <div class="texto-empresas">
             <?= gt_get_page_content('Empresas do Grupo') ?>
@@ -73,51 +24,48 @@
         <div id="slides" class="slides">
             <?= gt_get_custom_post_type('slider_empresas') ?>
         </div>
+        <div class="clearfix"></div>
     </div>
-</section>
+</div>
 
-<section class="main-content relacao">
-    <div class="container">
-        <div class="texto">
-            <?= gt_get_page_content('Relacao Com Investidores') ?>
+<div class="main-content inv">
+    <div class="container relacao">
+        <div class="info">
+            <?= gt_get_page_content('Relacao com Investidores') ?>
         </div>
-        <div class="docs">
+        <div class="content">
             <?= gt_get_investidores() ?>
         </div>
     </div>
-</section>
+</div>
 
-<section class="main-content contato">
-
-    <div class="texto-contato">
-        <div class="container">
-            <?= gt_get_page_content('Contato') ?>
-        </div>
-    </div>
-
-    <div class="departamentos">
-        <div class="container">
-            <div class="direita right">
-                <?= gt_get_page_content('Direita') ?>
+<div class="main-content contato">
+    <div class="container">
+        <div class="content">
+            <div class="page-content">
+                <?= gt_get_page_content('Contato') ?>
             </div>
-            <div class="esquerda left">
-                <?= gt_get_page_content('Esquerda') ?>
-            </div>            
+            <div class="texto-contato">
+                <div class="contatos">
+                    <div class="left">
+                        <?= gt_get_page_content('DIREITA') ?>
+                    </div>
+                    <div class="right">
+                        <?= gt_get_page_content('ESQUERDA') ?>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-</section>
+</div>
 
-<section class="main-content trabalhe">
+<div class="main-content trabalhe">
     <div class="container">
         <div class="conteudo-trabalhe">
-            <?= gt_get_page_content('Trabalhe Conosco') ?>
-            <div class="form-wrapper">
-                <?= do_shortcode('[contact-form-7 id="47"]') ?>
-            </div>
+            <?= gt_get_page_content('Trabalhe Conosco')?>
+            <?= do_shortcode('[contact-form-7 id="5" title="Trabalhe Conosco"]')?>
         </div>
     </div>
-</section>
+</div>
 
-<?php
-get_footer();
+<?php get_footer();
