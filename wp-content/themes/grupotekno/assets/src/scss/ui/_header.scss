@@ -7,6 +7,9 @@ header {
     z-index: 50;
     .container {
         width: 1180px;
+        @media #{$desktop-full-hd} {
+            width: 1337px;
+        }
     }
     nav {
         ul {
@@ -15,6 +18,9 @@ header {
             padding: 0;
             li {
                 font-size: 12px;
+                @media #{$desktop-full-hd} {
+                    font-size: 16px
+                }
                 display: inline-block;
                 height: $menu-height;
                 line-height: $menu-height;

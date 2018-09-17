@@ -10,9 +10,44 @@
 
 <div class="main-content timeline">
     <div class="container">
-        <div class="content">
-            a
+        <div class="linha">
+            <div class="event left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ante, sagittis a diam sed, tincidunt fringilla elit. Vestibulum est mi, accumsan id felis nec.</p>
+                <div class="ano">1939</div>
+            </div>
+            <div class="event right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ante, sagittis a diam sed, tincidunt fringilla elit. Vestibulum est mi, accumsan id felis nec.</p>
+                <div class="ano">1939</div>
+            </div>
+
+            <div class="event left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ante, sagittis a diam sed, tincidunt fringilla elit. Vestibulum est mi, accumsan id felis nec.</p>
+                <div class="ano">1939</div>
+            </div>
+            <div class="event right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ante, sagittis a diam sed, tincidunt fringilla elit. Vestibulum est mi, accumsan id felis nec.</p>
+                <div class="ano">1939</div>
+            </div>
+
+            <div class="event left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ante, sagittis a diam sed, tincidunt fringilla elit. Vestibulum est mi, accumsan id felis nec.</p>
+                <div class="ano">1939</div>
+            </div>
+            <div class="event right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ante, sagittis a diam sed, tincidunt fringilla elit. Vestibulum est mi, accumsan id felis nec.</p>
+                <div class="ano">1939</div>
+            </div>
+
+            <div class="event left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ante, sagittis a diam sed, tincidunt fringilla elit. Vestibulum est mi, accumsan id felis nec.</p>
+                <div class="ano">1939</div>
+            </div>
+            <div class="event right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque ante, sagittis a diam sed, tincidunt fringilla elit. Vestibulum est mi, accumsan id felis nec.</p>
+                <div class="ano">1939</div>
+            </div>
         </div>
+        <div class="clearfix"></div>
     </div>
 </div>
 
@@ -54,6 +89,7 @@
                         <?= gt_get_page_content('ESQUERDA') ?>
                     </div>
                 </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
@@ -62,8 +98,8 @@
 <div class="main-content trabalhe">
     <div class="container">
         <div class="conteudo-trabalhe">
-            <?= gt_get_page_content('Trabalhe Conosco')?>
-            <?= do_shortcode('[contact-form-7 id="5" title="Trabalhe Conosco"]')?>
+            <?= gt_get_page_content('Trabalhe Conosco') ?>
+            <?= do_shortcode('[contact-form-7 id="5" title="Trabalhe Conosco"]') ?>
         </div>
     </div>
 </div>

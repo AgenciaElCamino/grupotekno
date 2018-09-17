@@ -1,5 +1,5 @@
 .main-content {
-    background-size: 100% 100% !important; 
+    background-size: 100% 100% !important;
 }
 
 .home {
@@ -10,16 +10,24 @@
         width: 35%;
         left: 200px;
         bottom: 50px;
+        @media #{$desktop-full-hd} {
+            left: 500px;
+            bottom: 180px;
+        }
         p {
             color: #ffffff;
             margin: 0 0 10px 0;
             font-size: 15px;
+            @media #{$desktop-full-hd} {
+                font-size: $fhd-font-size;
+            }
         }
     }
 }
 
 .timeline {
     background: url(../img/bg-linha-tempo.jpg) no-repeat top;
+    background-size: 100% !important;
     min-height: 100vh;
 }
 
@@ -30,6 +38,16 @@
         margin: 0 auto;
         padding: 15px 0 0 0;
         color: #ffffff;
+        h2 {
+            @media #{$desktop-full-hd} {
+                font-size: $fhd-title-font-size
+            }
+        }
+        p {
+            @media #{$desktop-full-hd} {
+                font-size: $fhd-font-size
+            }
+        }
     }
     #nav {
         text-align: right;
@@ -44,6 +62,10 @@
     }
     .slides {
         height: 380px;
+        @media #{$desktop-full-hd} {
+            height: 500px;
+            width: 110%;
+        }
         .slide {
             background-color: transparent !important;
             .attachment-post-thumbnail {
@@ -58,6 +80,9 @@
                 float: right;
                 width: 45%;
                 margin-top: 90px;
+                @media #{$desktop-full-hd} {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -67,18 +92,24 @@
     &.inv {
         background: #636466;
         min-height: 100vh;
+        @media #{$desktop-full-hd} {
+            min-height: 50vh;
+        }
         display: inline-block;
         width: 100%;
     }
 }
 
-.relacao { 
+.relacao {
     min-height: 500px;
     width: $default-container-width;
     background: url(../img/bg-relacao.jpg) no-repeat top;
     background-size: 100% !important;
     padding: 100px 0 100px 0;
     background-color: #7C0F14;
+    @media #{$desktop-full-hd} {
+        width: 1337px;
+    }
     .info {
         margin-bottom: 40px;
         color: #fff;
@@ -86,15 +117,28 @@
         margin: 0 auto 40px auto;
         h2 {
             margin: 0 0 30px 0;
-            text-align: center
+            text-align: center;
+            @media #{$desktop-full-hd} {
+                font-size: $fhd-title-font-size
+            }
+        }
+        p {
+            @media #{$desktop-full-hd} {
+                font-size: $fhd-font-size
+            }
         }
     }
     .dropdown {
         cursor: pointer;
-        background-color: rgba(0,0,0,.4);
-        padding-top: 7px; 
+        background-color: rgba(0, 0, 0, .4);
+        padding-top: 7px;
         padding-bottom: 7px;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
+        h3 {
+            @media #{$desktop-full-hd} {
+                font-size: $fhd-font-size
+            }
+        }
         .dropdown-menu {
             display: none;
             &._open {
@@ -105,20 +149,39 @@
 }
 
 .contato {
-    min-height: 100vh;
+    @media #{$desktop-full-hd} {
+        min-height: 65vh;
+    }
+    min-height: 90vh;
     background: #636466;
     color: #FFFFFF;
     .container {
         width: 940px;
+        @media #{$desktop-full-hd} {
+            width: 1337px;
+        }
         padding: 5vh 0 0 0;
         .page-content {
             width: 80%;
             margin: 0 auto;
+            h2 {
+                @media #{$desktop-full-hd} {
+                    font-size: $fhd-title-font-size
+                }
+            }
+            p {
+                @media #{$desktop-full-hd} {
+                    font-size: $fhd-font-size
+                }
+            }
         }
         .texto-contato {
             background: #ffffff;
             text-align: center;
-            height: 95vh;
+            @media #{$desktop-full-hd} {
+                min-height: 65vh;
+            }
+            min-height: 90vh;
             margin-top: 60px;
             .contatos {
                 width: 80%;
@@ -130,15 +193,17 @@
                 }
                 p {
                     text-align: left;
-                    margin: 0 0 20px 0
+                    margin: 0 0 20px 0;
+                    @media #{$desktop-full-hd} {
+                        font-size: $fhd-font-size
+                    }
                 }
             }
         }
-    
         .departamentos {
             margin-top: 30px;
             a {
-                color:  #636466;
+                color: #636466;
                 text-decoration: none;
             }
             .container {
@@ -148,7 +213,7 @@
     }
 }
 
-.relacao { 
+.relacao {
     background: url(../img/bg-relacao.jpg) no-repeat top;
     background-color: #7A1014;
     background-size: 100% !important;
@@ -158,10 +223,10 @@
         margin: 0 auto;
         cursor: pointer;
         color: #fff;
-        background-color: rgba(0,0,0,.4);
-        padding-top: 7px; 
+        background-color: rgba(0, 0, 0, .4);
+        padding-top: 7px;
         padding-bottom: 7px;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
         .dropdown-menu {
             display: none;
             &._open {
@@ -169,7 +234,7 @@
             }
         }
         a {
-            color :#fff;
+            color: #fff;
             text-decoration: none;
         }
     }
@@ -182,22 +247,22 @@
         max-width: 980px;
         margin: 0 auto;
         /*
-        ul {
-            list-style: none;
-            li:before {
-                position: absolute;
-                content: '+';
-                margin-left: -30px;
-            }
-        }
-        */
+		ul {
+			list-style: none;
+			li:before {
+				position: absolute;
+				content: '+';
+				margin-left: -30px;
+			}
+		}
+		*/
     }
     .docs {
         width: 780px;
-        ul{
+        ul {
             margin: 0;
-        }   
-    } 
+        }
+    }
 }
 
 .trabalhe {
@@ -208,15 +273,30 @@
         background: url(../img/trabalhe.png) no-repeat center;
         background-color: #fff;
         height: 100vh;
+        @media #{$desktop-full-hd} {
+            min-height: 60vh;
+            width: 1337px;
+        }
         .conteudo-trabalhe {
             width: 667px;
             margin: 0 auto;
-            color:  #636466;
+            color: #636466;
             padding: 20px 0 0 0;
+            h2 {
+                @media #{$desktop-full-hd} {
+                    font-size: $fhd-title-font-size
+                }
+            }
             p {
                 margin: 0 0 10px 0;
+                @media #{$desktop-full-hd} {
+                    font-size: $fhd-font-size
+                }
             }
             .form-wrapper {
+                @media #{$desktop-full-hd} {
+                    margin-top: 60px;
+                }
                 input[type=text],
                 input[type=file],
                 textarea {
@@ -225,21 +305,117 @@
                     float: left;
                     width: 100%;
                     box-sizing: border-box;
+                    @media #{$desktop-full-hd} {
+                        font-size: $fhd-font-size
+                    }
                 }
                 textarea {
                     height: 60px;
                 }
                 input[type=submit] {
-                    border:0;
+                    border: 0;
                     color: $white;
                     padding: 5px 10px;
                     background: #eb212e;
                     font-family: 'Ubuntu', sans-serif;
                     font-size: 14px;
                     cursor: pointer;
+                    @media #{$desktop-full-hd} {
+                        font-size: $fhd-font-size
+                    }
                 }
                 label {
-                    font-size: 14px
+                    font-size: 14px;
+                    @media #{$desktop-full-hd} {
+                        font-size: $fhd-font-size
+                    }
+                }
+            }
+        }
+    }
+}
+
+.timeline {
+    background-size: 100% !important;
+    min-height: 100vh;
+	padding-bottom: 450px;
+	@media #{$desktop-full-hd} {
+		padding-bottom: 680px;
+	}
+    background: url(../img/bg-linha-tempo.jpg) no-repeat top;
+    .container {
+        .linha {
+            &::before {
+				position: absolute;
+				left: 50%;
+				margin-left: -7.5px;
+				content: '';
+				width: 15px;
+				height: 15px;
+				border-radius: 15px;
+				background-color: #949599;
+			}
+			&::after {
+				position: absolute;
+				bottom: 0;
+				margin-left: -13px;
+				content: '';
+				width: 15px;
+				height: 15px;
+				border-radius: 15px;
+				background-color: #949599;
+			}
+            position: relative;
+			top: 350px;
+            background: url(../img/bg-linha.jpg) center repeat-y;
+            min-height: 100vh;
+            margin: 0 auto;
+            width: 447px;
+			height: 210vh;
+			@media #{$desktop-full-hd} {
+				top: 580px;
+				height: 120vh;
+			}
+            .event {
+                color: #77787b;
+                font-size: 13px;
+                width: 230px;
+                height: 150px;
+				background-size: 100% !important;
+				position: relative;
+                &.left {
+                    background: url(../img/esquerda.png) no-repeat;
+                    p {
+                        margin-left: 10px;
+                        margin-top: 10px;
+                        padding-right: 95px;
+                    }
+                    .ano {
+						color: #e7e7e7;
+						font-size: 32px;
+						position: absolute;
+						top: 50%;
+						margin-top: -16px;
+						right: -90px;
+						font-weight: bold;
+					}
+                }
+                &.right {
+                    background: url(../img/direita.png) no-repeat;
+                    p {
+                        margin-right: 10px;
+                        padding-left: 95px;
+                        margin-top: 10px;
+                    }
+                    .ano {
+						color: #e7e7e7;
+						font-size: 32px;
+						position: absolute;
+						top: 50%;
+						margin-top: -16px;
+						left: -90px;
+						font-weight: bold;
+					}
                 }
             }
         }

@@ -4,14 +4,17 @@ $handheld: '(max-width: 767px)';
 $tablet: '(min-width: 768px) and (max-width: 1023px)';
 $desktop-hd: '(min-width: 1024px) and (max-width: 1919px)';
 $desktop-full-hd: '(min-width: 1920px)';
-
 /* ORIENTATION */
+
 $landscape: ' and (orientation: landscape)';
-
 /* FONT ATTRIBUTES */
-$case-name-font-family: Arial, Helvetica, sans-serif;
-$case-name-font-size: 12px;
 
+$case-name-font-family: Arial,
+Helvetica,
+sans-serif;
+$case-name-font-size: 12px;
+$fhd-font-size: 22px;
+$fhd-title-font-size: 32px;
 $menu-height: 120px;
 $default-container-width: 940px;
 $default-container-width-fhd: 940px;
