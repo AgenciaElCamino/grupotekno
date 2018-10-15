@@ -5,14 +5,17 @@
 .home {
     background: url(../img/banner-home.jpg) no-repeat top;
     min-height: 100vh;
+    margin-top: 120px;
     .content {
         position: absolute;
         width: 35%;
-        left: 200px;
-        bottom: 50px;
+        left: 270px;
+        bottom: 110px;
+        background-color: rgba(0, 0, 0, .3);
+        padding: 20px;
         @media #{$desktop-full-hd} {
             left: 500px;
-            bottom: 180px;
+            bottom: 260px;
         }
         p {
             color: #ffffff;
@@ -32,8 +35,10 @@
 }
 
 .empresas {
-    background: url(../img/bg-empresas.jpg) no-repeat top;
-    min-height: 100vh;
+    background: url(../img/bg-empresas.jpg) no-repeat bottom;
+    background-color: #636466;
+    min-height: 125vh;
+    background-size: 100% !important;
     .texto-empresas {
         margin: 0 auto;
         padding: 15px 0 0 0;
@@ -50,8 +55,7 @@
         }
     }
     #nav {
-        text-align: right;
-        margin: 0 80px 0 0;
+        text-align: right; //margin: 0 80px 0 0;
         a {
             color: $white;
             margin: 0 0 0 30px;
@@ -80,6 +84,14 @@
                 float: right;
                 width: 45%;
                 margin-top: 90px;
+                font-size: 14px;
+                p {
+                    margin: 0 0 10px 0;
+                    a {
+                        color: #ffffff;
+                        text-decoration: underline;
+                    }
+                }
                 @media #{$desktop-full-hd} {
                     font-size: 18px;
                 }
@@ -149,6 +161,9 @@
 }
 
 .contato {
+    ul {
+        margin: 0;
+    }
     @media #{$desktop-full-hd} {
         min-height: 65vh;
     }
@@ -172,6 +187,43 @@
             p {
                 @media #{$desktop-full-hd} {
                     font-size: $fhd-font-size
+                }
+            }
+            .form-wrapper {
+                margin-top: 60px;
+                input[type=text],
+                input[type=file],
+                select,
+                textarea {
+                    padding: 5px;
+                    margin: 0 0 10px 0;
+                    float: left;
+                    width: 100%;
+                    box-sizing: border-box;
+                    @media #{$desktop-full-hd} {
+                        font-size: $fhd-font-size
+                    }
+                }
+                textarea {
+                    height: 60px;
+                }
+                input[type=submit] {
+                    border: 0;
+                    color: $white;
+                    padding: 5px 10px;
+                    background: #eb212e;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 14px;
+                    cursor: pointer;
+                    @media #{$desktop-full-hd} {
+                        font-size: $fhd-font-size
+                    }
+                }
+                label {
+                    font-size: 14px;
+                    @media #{$desktop-full-hd} {
+                        font-size: $fhd-font-size
+                    }
                 }
             }
         }
@@ -270,9 +322,11 @@
     background: #eb212e;
     .container {
         background-size: 100% 100% !important;
-        background: url(../img/trabalhe.png) no-repeat center;
-        background-color: #fff;
-        height: 100vh;
+        background-color: #fff; //height: 100vh;
+        img {
+            width: 100%;
+            display: block;
+        }
         @media #{$desktop-full-hd} {
             min-height: 60vh;
             width: 1337px;
@@ -338,51 +392,70 @@
 .timeline {
     background-size: 100% !important;
     min-height: 100vh;
-	padding-bottom: 450px;
-	@media #{$desktop-full-hd} {
-		padding-bottom: 680px;
-	}
+    padding-bottom: 450px;
+    @media #{$desktop-full-hd} {
+        padding-bottom: 680px;
+    }
     background: url(../img/bg-linha-tempo.jpg) no-repeat top;
     .container {
+        .title {
+            position: relative;
+            top: 350px;
+            color: #636466;
+            font-size: 20px;
+            h2 {
+                margin: 0
+            }
+            @media #{$desktop-full-hd} {
+                top: 510px;
+                font-size: 28px;
+            }
+        }
         .linha {
             &::before {
-				position: absolute;
-				left: 50%;
-				margin-left: -7.5px;
-				content: '';
-				width: 15px;
-				height: 15px;
-				border-radius: 15px;
-				background-color: #949599;
-			}
-			&::after {
-				position: absolute;
-				bottom: 0;
-				margin-left: -13px;
-				content: '';
-				width: 15px;
-				height: 15px;
-				border-radius: 15px;
-				background-color: #949599;
-			}
+                position: absolute;
+                left: 50%;
+                margin-left: -7.5px;
+                content: '';
+                width: 15px;
+                height: 15px;
+                border-radius: 15px;
+                background-color: #949599;
+            }
+            &::after {
+                position: absolute;
+                bottom: 0;
+                margin-left: -13px;
+                content: '';
+                width: 15px;
+                height: 15px;
+                border-radius: 15px;
+                background-color: #949599;
+            }
             position: relative;
-			top: 350px;
+            top: 380px;
             background: url(../img/bg-linha.jpg) center repeat-y;
             min-height: 100vh;
             margin: 0 auto;
             width: 447px;
-			height: 210vh;
-			@media #{$desktop-full-hd} {
-				top: 580px;
-				height: 120vh;
-			}
+            height: 250vh;
+            @media #{$desktop-full-hd} {
+                top: 580px;
+                height: 120vh;
+            }
             .event {
                 color: #77787b;
                 font-size: 13px;
                 width: 230px;
                 height: 150px;
-				background-size: 100% !important;
-				position: relative;
+                background-size: 100% !important;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    text-align: center
+                }
                 &.left {
                     background: url(../img/esquerda.png) no-repeat;
                     p {
@@ -391,14 +464,19 @@
                         padding-right: 95px;
                     }
                     .ano {
-						color: #e7e7e7;
-						font-size: 32px;
-						position: absolute;
-						top: 50%;
-						margin-top: -16px;
-						right: -90px;
-						font-weight: bold;
-					}
+                        color: #e7e7e7;
+                        font-size: 32px;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -16px;
+                        right: -90px;
+                        font-weight: bold;
+                    }
+                    img {
+                        width: 100%;
+                        position: absolute;
+                        left: -250px;
+                    }
                 }
                 &.right {
                     background: url(../img/direita.png) no-repeat;
@@ -408,16 +486,56 @@
                         margin-top: 10px;
                     }
                     .ano {
-						color: #e7e7e7;
-						font-size: 32px;
-						position: absolute;
-						top: 50%;
-						margin-top: -16px;
-						left: -90px;
-						font-weight: bold;
-					}
+                        color: #e7e7e7;
+                        font-size: 32px;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -16px;
+                        left: -90px;
+                        font-weight: bold;
+                    }
+                    img {
+                        width: 100%;
+                        position: absolute;
+                        right: -250px;
+                    }
                 }
             }
+        }
+    }
+}
+
+.generic {
+    ul {
+        margin: 0;
+    }
+    h2 {
+        text-align: center;
+    }
+    min-height: 90vh;
+    background: #636466;
+    color: #FFFFFF;
+    .container {
+        width: 940px;
+        padding: 5vh 0 0 0;
+        .page-content {
+            margin: 0 auto;
+        }
+        .texto {
+            background: #ffffff;
+            text-align: left;
+            min-height: 90vh;
+            margin-top: 60px;
+            color: #636466;
+            padding: 50px;
+        }
+    }
+    &.certificados {
+        br {display: none;}
+        img {
+            float: left;
+            margin: 20px 20px 0 0;
+            border: solid 1px #ccc
         }
     }
 }

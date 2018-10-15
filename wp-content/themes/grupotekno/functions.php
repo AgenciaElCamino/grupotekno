@@ -104,7 +104,7 @@ function _get_children_post($id)
             echo '<ul class="dropdown-menu">';
             while ($posts->have_posts()) : $posts->the_post(); ?>
             <li>
-                <h3><a target="_blank" <?=get_field('pdf') ? 'href="'.get_field('pdf').'"' : ''?>><?php the_title() ?></a></h3>
+                <h3><a target="_blank" <?= get_field('pdf') ? 'href="' . get_field('pdf') . '"' : '' ?>><?php the_title() ?></a></h3>
             </li>
             <?php _get_children_post(get_the_ID()) ?>
             <?php endwhile;
@@ -118,4 +118,16 @@ function _get_children_post($id)
 function gt_get_relacao_dropdown()
 {
     wp_dropdown_pages();
+}
+
+add_filter('nav_menu_link_attributes', 'gt_menu_attrs', 10, 3);
+function gt_menu_attrs($atts, $item, $args)
+{
+    $menu_target = 2;
+    $targets = [44, 45, 46, 47, 48, 49];
+
+    if (in_array($item->ID, $targets)) {
+        $atts['data-target'] = basename(get_permalink($item->ID));
+    }
+    return $atts;
 }
