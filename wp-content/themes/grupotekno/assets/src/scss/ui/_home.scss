@@ -10,12 +10,12 @@
         position: absolute;
         width: 35%;
         left: 270px;
-        bottom: 110px;
-        background-color: rgba(0, 0, 0, .3);
+        bottom: 160px;
+        background-color: rgba(0, 0, 0, .8);
         padding: 20px;
         @media #{$desktop-full-hd} {
-            left: 500px;
-            bottom: 260px;
+            left: 450px;
+            bottom: 420px;
         }
         p {
             color: #ffffff;
@@ -38,6 +38,9 @@
     background: url(../img/bg-empresas.jpg) no-repeat bottom;
     background-color: #636466;
     min-height: 125vh;
+    @media #{$desktop-full-hd} {
+        min-height: 98vh;
+    }
     background-size: 100% !important;
     .texto-empresas {
         margin: 0 auto;
@@ -56,16 +59,18 @@
     }
     #nav {
         text-align: right; //margin: 0 80px 0 0;
+        margin-top: 50px;
         a {
             color: $white;
             margin: 0 0 0 30px;
             &.activeSlide {
-                text-decoration: underline;
+                color: #EE1C25;
+                font-weight: bold;
             }
         }
     }
     .slides {
-        height: 380px;
+        height: 400px;
         @media #{$desktop-full-hd} {
             height: 500px;
             width: 110%;
@@ -85,6 +90,10 @@
                 width: 45%;
                 margin-top: 90px;
                 font-size: 14px;
+                @media #{$desktop-full-hd} {
+                    width: 40%;
+                    text-align: justify;
+                }
                 p {
                     margin: 0 0 10px 0;
                     a {

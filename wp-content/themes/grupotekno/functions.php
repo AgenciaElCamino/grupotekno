@@ -124,7 +124,7 @@ add_filter('nav_menu_link_attributes', 'gt_menu_attrs', 10, 3);
 function gt_menu_attrs($atts, $item, $args)
 {
     $menu_target = 2;
-    $targets = [44, 45, 46, 47, 48, 49];
+    $targets = [44, 45, 46, 47, 48, 49, 89];
 
     if (in_array($item->ID, $targets)) {
         $atts['data-target'] = basename(get_permalink($item->ID));

@@ -79,6 +79,20 @@
         <div class="clearfix"></div>
     </div>
 </div>
+
+<div class="main-content generic mvv">
+    <div class="container">
+        <div class="content">
+            <div class="page-content">
+                <h2>MISSÃO, VISÃO E VALORES</h2>
+                <div class="texto">
+                    <?= gt_get_page_content('Missão, Visão e Valores') ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--
 <div class="main-content inv" id="relacoes-com-investidores">
     <div class="container relacao">
@@ -91,6 +105,20 @@
     </div>
 </div>
 -->
+
+<div class="main-content generic certificados" id="certificacoes">
+    <div class="container">
+        <div class="content">
+            <div class="page-content">
+                <h2>CERTIFICADOS/ASSOCIAÇÕES/PREMIAÇÕES</h2>
+                <div class="texto">
+                    <?= gt_get_page_content('Certificações') ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="main-content contato" id="contato">
     <div class="container">
         <div class="content">
@@ -108,32 +136,6 @@
                     </div>
                 </div>
                 <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="main-content generic mvv">
-    <div class="container">
-        <div class="content">
-            <div class="page-content">
-                <h2>MISSÃO, VISÃO E VALORES</h2>
-                <div class="texto">
-                    <?= gt_get_page_content('Missão, Visão e Valores') ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="main-content generic certificados">
-    <div class="container">
-        <div class="content">
-            <div class="page-content">
-                <h2>CERTIFICADOS/ASSOCIAÇÕES/PREMIAÇÕES</h2>
-                <div class="texto">
-                    <?= gt_get_page_content('Certificações') ?>
-                </div>
             </div>
         </div>
     </div>
