@@ -1,0 +1,9 @@
+Nov 07 2018 17:11:42
+{"Number":2,"Message":"unlink(D:\\desenvolvimento\\projects\\php\\grupotekno\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\uhz5y5wqlios\\filemap.list): Resource temporarily unavailable","File":"D:\\desenvolvimento\\projects\\php\\grupotekno\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":56}
+
+Nov 07 2018 17:11:42
+{"Number":2,"Message":"unlink(D:\\desenvolvimento\\projects\\php\\grupotekno\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\uhz5y5wqlios\\grupotekno.local-20181107-171136-619.wpress): Resource temporarily unavailable","File":"D:\\desenvolvimento\\projects\\php\\grupotekno\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":56}
+
+Nov 07 2018 17:11:42
+{"Number":2,"Message":"rmdir(D:\\desenvolvimento\\projects\\php\\grupotekno\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\uhz5y5wqlios): Directory not empty","File":"D:\\desenvolvimento\\projects\\php\\grupotekno\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":60}
+
